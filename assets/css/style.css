@@ -1,0 +1,133 @@
+.container {
+	max-width: 500px;
+	margin: 2rem auto;
+	padding: 1rem;
+}
+@media (min-width: 768px) {
+	.container {
+		max-width: 720px;
+	}
+}
+@media (min-width: 992px) {
+	.container {
+		max-width: 960px;
+	}
+}
+@media (min-width: 1200px) {
+	.container {
+		max-width: 992px;
+	}
+}
+@media (min-width: 1400px) {
+	.container {
+		max-width: 1320px;
+	}
+}
+.img-fluid {
+	width: 100%;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	overflow-x: hidden;
+}
+
+.profile .photo {
+	max-width: 90px;
+	margin: 0 auto;
+}
+.profile .photo img {
+	border-radius: 1rem;
+}
+.profile .name {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #4e5150;
+	margin: 0.5rem 0;
+}
+.profile .country {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	text-align: center;
+	color: #a9a9a9;
+}
+.account {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	margin: 0.8rem 0;
+}
+.account .box {
+	width: 78px;
+	height: 52px;
+	left: 64px;
+	top: 189px;
+	background: #e5e5e5;
+	border-radius: 12px;
+	display: grid;
+	place-content: center;
+}
+.account .box h5 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	color: #4e5150;
+}
+.account .box h6 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	color: #bdbdbd;
+}
+.body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.5rem;
+	margin: 2rem 0;
+}
+.grid-col-span-2 {
+	grid-column: span 2;
+}
+.grid-row-span-2 {
+	grid-row: span 2;
+}
+.body img {
+	border-radius: 1rem;
+	filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.15));
+}
+@media (min-width: 768px) {
+	.body {
+		gap: 1.5rem;
+		margin: 3rem 0;
+	}
+	.profile .photo {
+		max-width: 120px;
+	}
+}
+footer {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 17px;
+	text-align: center;
+	color: #b9bdcf;
+	margin-bottom: 2rem;
+}
